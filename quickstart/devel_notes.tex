@@ -1,0 +1,40 @@
+First you have to install the Angular CLI (potentially as root).
+
+\begin{lstlisting}
+  npm install -h @angular/cli
+\end{lstlisting}
+
+
+Now ou can create a new application:
+
+\begin{lstlisting}
+  ng new my_new_app
+\end{lstlisting}
+
+This generate a new project with a default application and supporting
+files. The \lstinline$ng add$ command can be used to add pre-packaged
+functionality to a new project. It applies schematics in the specified
+package.
+
+Serve teh application
+
+\begin{lstlisting}
+  cd m_new_app
+  ng serve --open
+\end{lstlisting}
+
+This builds the app, starts the dev server, watches source files, and
+rebuilds the app if flies change.
+
+Componenets
+
+The opened page is the \textit{application shell}. Controlled b an
+Angular component named
+\lstinline$AppComponent$. \lstinline$AppComponent$ is in the
+\lstinline$src/app$ folder (.ts, .html, css files).
+
+\textit{Components}: fundamentatl building blocks of Angular
+applcations. Display data, listen for user input, take actions based
+on the input.
+
+{{}} - interpolation binding syntax
